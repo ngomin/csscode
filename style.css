@@ -1,0 +1,147 @@
+/* ===========================
+   🌐 Kiểu chung toàn trang
+   =========================== */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fafafa;
+  color: #333;
+}
+
+/* 1️⃣ Header */
+header {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* 2️⃣ Thanh điều hướng */
+nav {
+  background-color: #555;
+  display: inline-block;
+  width: 80%;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 10px 10%;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  width: 120px;
+  margin: 5px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* 3️⃣ Hình ảnh trong thanh nav */
+nav img {
+  width: 10%;
+}
+
+/* 4️⃣ Nội dung chính */
+main {
+  background-color: #fff;
+  font-size: 18px;
+  padding: 30px;
+  min-height: 300px;
+  border-radius: 10px;
+  margin: 20px 10%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* 5️⃣ Đoạn văn */
+p {
+  line-height: 1.6;
+}
+
+/* 6️⃣ Tiêu đề */
+h1 {
+  text-align: center;
+  font-family: "Trebuchet MS", sans-serif;
+  color: #f0c040;
+}
+
+/* 7️⃣ Chân trang */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* 8️⃣ Liên kết “Chuyển đến nội dung chính” */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  z-index: 100;
+  transition: top 0.3s;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* ===========================
+   📐 Bố cục GRID
+   =========================== */
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.grid img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.grid img:hover {
+  transform: scale(1.05);
+}
+
+/* ===========================
+   💪 Bố cục FLEX
+   =========================== */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+}
+
+.flex img {
+  width: 30%;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.flex img:hover {
+  transform: scale(1.1);
+}
